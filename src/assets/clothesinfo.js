@@ -57,13 +57,6 @@ const clothesInfo = () => {
             item[nameitem]['images'] = [];
             item[nameitem]['images'].push(`${clothecatg}/${nameitem}1.jpeg`);
             item[nameitem]['images'].push(`${clothecatg}/${nameitem}2.jpeg`);
-
-            if (clothecatg !== 'hats') {
-                item[nameitem]['size'] = ['Small','Medium','Large']
-            }
-            if (clothecatg === 'hats') {
-                item[nameitem]['size'] = 'One-Size-Fits-All'
-            }
         }
     }
 

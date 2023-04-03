@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 
 
 function Navbar (props) {
+    const itemsTotal = Object.values(props)[0];
+    console.log(itemsTotal);
 
     const navStyle = {
         color: 'white'
@@ -34,7 +36,7 @@ function Navbar (props) {
                     <div>Cart</div>
                     <div className="cartnavdisp">
                         <img src={require('../assets/goldclawlogo.svg').default} alt='' style={{position: 'absolute'}} className="cartimg"/>
-                        <div className="cartimgtext" style={{position: 'relative', top: '0.1vh', left: '2.7vw'}}>5</div>
+                        <div className="cartimgtext" style={{position: 'relative', top: '0.1vh', left: '2.7vw'}}>{itemsTotal}</div>
                     </div>
                 </li>
                 </Link>

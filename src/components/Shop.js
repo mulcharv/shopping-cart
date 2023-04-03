@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import ShopNav from "./shopcatgs/shopnav";
 
-function Shop(props) {
+function Shop() {
 
 
 
