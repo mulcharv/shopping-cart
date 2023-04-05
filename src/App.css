@@ -59,6 +59,12 @@ body {
     url("./assets/pagetitlefont.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Hometitle";   
+  src: local("wethenorthfont"),
+    url("./assets/wethenorthfont.ttf") format("truetype");
+}
+
 a:link { text-decoration: none; }
 
 
@@ -135,6 +141,24 @@ a:active {
   margin-top: -2.5vh;
   margin-left: -0.5vw;
 }
+
+.fade-in-text {
+  font-family: "Hometitle";
+  font-size: 14vh;
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }  
+}
+
+.textcontfirst {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+
 
 .shoplinks {
   list-style: none;
