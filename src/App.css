@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -142,22 +143,141 @@ a:active {
   margin-left: -0.5vw;
 }
 
+.homecont {
+  background-color: #111;
+  color: #eee;
+}
+
+.soundbtn {
+  font-family: "Pagetitle";
+  font-size: 2.5vh;
+  margin-top: 2vh;
+  cursor: pointer;
+}
+
+.homeanimation {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 50vw 50vw;
+  margin-top: 2vh;
+}
+
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.kawhivid {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .fade-in-text {
   font-family: "Hometitle";
   font-size: 14vh;
-  animation: fadeIn 3s;
+  animation: fadeIn 0.25s;
 }
 
 @keyframes fadeIn {
-0% { opacity: 0; }
-100% { opacity: 1; }  
+  0% { opacity: 0; }
+  100% { opacity: 1; }  
+  }
+  
+
+.words {
+  font-family: "Hometitle";
+  font-size: 18vh;
+}
+
+.north {
+  font-size: 24vh;
+}
+
+
+.homesubfirst {
+  font-family: "Pagetitle";
+  font-size: 5vh;
+  animation: fadeIn 0.5s;
+}
+
+.homesubsec {
+  font-family: "Title";
+  font-size: 7.5vh;
+  animation: fadeIn 0.5s;
+}
+
+.homeshop {
+  font-family: "Pagetitle";
+  font-size: 2.5vh;
+  margin-top: 1.5vh;
+  margin-bottom: 2vh;
+  cursor: pointer;
+}
+
+.homesecondpart {
+  height: 25vh;
 }
 
 .textcontfirst {
   display: grid;
   grid-auto-flow: column;
+  justify-content: center;
+  gap: 10vw;
 }
 
+
+.image-gallery-image {
+  height: 22vw;
+  width: 30vw;
+}
+
+.aboutcont {
+  display: grid;
+  gap: 5vh;
+  background-color: rgba(132, 136, 139,0.1);
+
+}
+
+.abouttitle {
+  font-family: "Title";
+  font-size: 6vh;
+  margin-top: 4vh;
+}
+
+.aboutfirstcont, .aboutsecondcont {
+  display: grid;
+  grid-auto-flow: column;
+  font-family: 'Pagetitle';
+}
+
+.aboutfirstcont, .aboutsecondcont {
+  justify-content: center;
+  gap: 5vw;
+}
+
+.aboutfirsttitle, .aboutsecondtitle {
+  font-size: 4vh;
+}
+
+.aboutfirstdesc, .aboutseconddesc {
+  inline-size: 20vw;
+  margin-top: 2vh;
+  font-size: 2.6vh;
+
+}
+
+.torontocourt {
+  width: 30vw;
+}
+
+.jurassicpark {
+  width: 38vw;
+}
+
+.aboutsecondcont {
+  margin-bottom: 5vh;
+}
 
 
 .shoplinks {
@@ -525,9 +645,9 @@ a:active {
 }
 
 .cartcont {
-  margin-top: 2vh;
   font-family: "Pagetitle";
   display: grid;
+  background-color: rgba(132, 136, 139,0.1);
 }
 
 .carttiletotal {
@@ -546,6 +666,7 @@ a:active {
   font-size: 2vw;
   margin-left: 2vw;
   font-weight: 900;
+  margin-top: 7vh;
 }
 
 .cartlist {
@@ -616,7 +737,7 @@ a:active {
   display: grid;
   justify-content: center;
   font-size: 1.1vw;
-  margin-bottom: 6vh;
+  margin-bottom: 8vh;
   background-color: rgba(132, 136, 139,0.2);
   width: fit-content;
   padding: 1.5vw;
