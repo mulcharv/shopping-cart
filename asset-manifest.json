@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/shopping-cart/static/css/main.731a6f92.css",
-    "main.js": "/shopping-cart/static/js/main.b6161433.js",
+    "main.js": "/shopping-cart/static/js/main.dd885184.js",
     "static/media/kawhishot.mp4": "/shopping-cart/static/media/kawhishot.1a3e20ae3d3595bc790e.mp4",
     "static/media/lowry5.jpeg": "/shopping-cart/static/media/lowry5.63507cde03c3dad69e5d.jpeg",
     "static/media/derozanlowry2.jpeg": "/shopping-cart/static/media/derozanlowry2.b035c6e16bc6dbb6f820.jpeg",
@@ -116,10 +116,10 @@
     "static/media/backbtnimg.svg": "/shopping-cart/static/media/backbtnimg.40b0720b79176670697d.svg",
     "static/media/facebook.svg": "/shopping-cart/static/media/facebook.c6497cfad44bf6d8daaf64b0948540de.svg",
     "main.731a6f92.css.map": "/shopping-cart/static/css/main.731a6f92.css.map",
-    "main.b6161433.js.map": "/shopping-cart/static/js/main.b6161433.js.map"
+    "main.dd885184.js.map": "/shopping-cart/static/js/main.dd885184.js.map"
   },
   "entrypoints": [
     "static/css/main.731a6f92.css",
-    "static/js/main.b6161433.js"
+    "static/js/main.dd885184.js"
   ]
 }
