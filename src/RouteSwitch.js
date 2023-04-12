@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import clothesInfo from "./assets/clothesinfo";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
@@ -59,7 +59,7 @@ function RouteSwitch () {
     }
 
     return (
-        <BrowserRouter>
+        <HashRouter>
           <div className="App">
             <Navbar data={itemsTotal}/>
             <Routes>
@@ -85,7 +85,7 @@ function RouteSwitch () {
             </Routes>
             <Infobar />
           </div>
-        </BrowserRouter>
+        </HashRouter>
     );
 };
 
