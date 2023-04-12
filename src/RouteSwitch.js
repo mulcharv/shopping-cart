@@ -59,7 +59,7 @@ function RouteSwitch () {
     }
 
     return (
-        <HashRouter basename="/">
+        <HashRouter basename="">
           <div className="App">
             <Navbar data={itemsTotal}/>
             <Routes>
