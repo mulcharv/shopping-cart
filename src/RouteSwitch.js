@@ -58,7 +58,7 @@ function RouteSwitch () {
 
     }
 
-    const router = createBrowserRouter(
+    const router = createBrowserRouter( {basename: ''},
         createRoutesFromElements(
             <Route>
                 <Route path="/" element={<Home />} />
