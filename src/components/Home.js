@@ -149,7 +149,7 @@ function Home () {
                 </div>
                 <div className="animationmediacont">
                     <div className="animationvidcont">
-                        <Expire delay="30000"><div className="player-wrapper"><ReactPlayer className="kawhivid" url={'https://streamable.com/nrzhen'} width='90%' height='90%' playing={true} muted={isMute} /></div></Expire>
+                        <Expire delay="30000"><div className="player-wrapper"><ReactPlayer className="kawhivid" url={'https://streamable.com/koso14'} width='90%' height='90%' playing={true} muted={isMute} /></div></Expire>
                     </div>
                     <div className="animationimgcont">{!loadingImages && <ImageGallery additionalClass="galleryimages" items={images} showFullscreenButton={false} autoPlay={true}/>}</div>
                 </div>
