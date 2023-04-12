@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { createBrowserRouter, createRoutesFromElements, RouterProvider, Routes, Route } from "react-router-dom";
 import clothesInfo from "./assets/clothesinfo";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
@@ -58,11 +58,9 @@ function RouteSwitch () {
 
     }
 
-    return (
-        <HashRouter basename="">
-          <div className="App">
-            <Navbar data={itemsTotal}/>
-            <Routes>
+    const router = createBrowserRouter(
+        createRoutesFromElements(
+            <Route>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/shop" element={<Shop />}>
@@ -82,10 +80,16 @@ function RouteSwitch () {
                     <Route path=":itemId" element={<ProductPage inventory={inventory} onChange={UpdateCart}/>} />
                 </Route>
                 <Route path="/checkouterror" element={<CheckoutError />}/>
-            </Routes>
+            </Route>
+        )
+    )
+
+    return (
+          <div className="App">
+            <Navbar data={itemsTotal}/>
+            <RouterProvider router={router} />
             <Infobar />
           </div>
-        </HashRouter>
     );
 };
 
