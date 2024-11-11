@@ -64,6 +64,8 @@ function Home() {
   const [loadingSubFirst, setLoadingSubFirst] = useState(true);
   const [loadingSubSec, setLoadingSubSec] = useState(true);
 
+  const [isPlaying, setIsPlaying] = useState(false);
+
   const [loadingHomeShop, setLoadingHomeShop] = useState(true);
 
   const [loadingImages, setLoadingImages] = useState(true);
@@ -102,6 +104,9 @@ function Home() {
     { original: require('../assets/homeimages/championship2.jpeg') },
   ];
 
+  useEffect(() => {
+    setIsPlaying(true);
+  }, []);
   useEffect(() => {
     setTimeout(() => {
       setLoadingSecond(false);
@@ -231,18 +236,18 @@ function Home() {
         </div>
         <div className='animationmediacont'>
           <div className='animationvidcont'>
-            {/* <Expire delay='30000'> */}
-            <div className='player-wrapper'>
-              <ReactPlayer
-                className='kawhivid'
-                url={'https://streamable.com/koso14'}
-                width='90%'
-                height='90%'
-                playing={true}
-                muted={true}
-              />
-            </div>
-            {/* </Expire> */}
+            <Expire delay='30000'>
+              <div className='player-wrapper'>
+                <ReactPlayer
+                  className='kawhivid'
+                  url={'https://streamable.com/koso14'}
+                  width='90%'
+                  height='90%'
+                  playing={isPlaying}
+                  muted={isMute}
+                />
+              </div>
+            </Expire>
           </div>
           <div className='animationimgcont'>
             {!loadingImages && (
