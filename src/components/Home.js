@@ -6,6 +6,7 @@ import ReactPlayer from 'react-player';
 import introVideo from '../assets/kawhishot.mp4';
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
+import introVideo from '../assets/compressedv2.mp4';
 
 function Home() {
   const [textSets, setTextSets] = useState([
@@ -64,8 +65,6 @@ function Home() {
   const [loadingSubFirst, setLoadingSubFirst] = useState(true);
   const [loadingSubSec, setLoadingSubSec] = useState(true);
 
-  const [isPlaying, setIsPlaying] = useState(false);
-
   const [loadingHomeShop, setLoadingHomeShop] = useState(true);
 
   const [loadingImages, setLoadingImages] = useState(true);
@@ -104,9 +103,6 @@ function Home() {
     { original: require('../assets/homeimages/championship2.jpeg') },
   ];
 
-  useEffect(() => {
-    setIsPlaying(true);
-  }, []);
   useEffect(() => {
     setTimeout(() => {
       setLoadingSecond(false);
@@ -240,10 +236,10 @@ function Home() {
               <div className='player-wrapper'>
                 <ReactPlayer
                   className='kawhivid'
-                  url={'https://streamable.com/koso14'}
+                  url={introVideo}
                   width='90%'
                   height='90%'
-                  playing={isPlaying}
+                  playing={true}
                   muted={isMute}
                 />
               </div>
