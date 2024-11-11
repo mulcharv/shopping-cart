@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Shopping Cart
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About This Project
 
-## Available Scripts
+This project is an entirely front end based e-commerce mock sports apparel website for the NBA franchise Toronto Raptors. It utilizes the Javascript library React to
+build various components that make up the web pages of the site and takes advantage of prop drilling to deliver the state of user purchases across the site. 
+It also has a dynamic home page with a text animation timed to match an iconic video from the franchise, after which users can see a picture slideshow that dives through
+the team's history. 
 
-In the project directory, you can run:
+Web pages and features developed for this project include: 
 
-### `npm start`
+* A responsive navigation bar with links to web pages and the user's shopping cart (which also displays number of items in the cart).
+* A home page with a multimedia syncronized experience to greet users.
+* Merchandise pages broken down by cateogry, with an info-bar to navigate categories and responsive product cards that
+  change images upon hover, deliver important product information, and link to the respective product page when clicked.
+* Product pages that include a slideshow of pictures, product name, price, size selection (when applicable), quanitity input selector, 
+  and links to add selected quantity of product to cart or to go back to the main shop page.
+* An about us page detailing the founding story and values of the mock e-commerce store.
+* A checkout cart page with itemized breakdown of products (with product details, subtotal, ability to update quantity selected, and remove product from cart). It also has
+  a total price breakdown with shipping fees, taxes, and a link to finalize order.
+* Site footer with mock links to company social media accounts, customer service and privacy/refund policies, career page, and a newsletter signup.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+A live link to the site can be found in the repository's about section.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Key Learnings
 
-### `npm test`
+This was my first project using React functional components and prop drilling state across components on a large scale, which provided the opportunity to learn how to do the following:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Deciding which variables to include in the main state of the router file (a full inventory of clothing items, items in the cart, and total number of items) and building functions that can be passed to smaller components, allowing the state to be updated through them.
+* How to nest route paths properly and use the outlet component to populate pages with sub components.
+* Structuring various onClick functions within html elements (buttons, inputs) to update the local state.
+* Mapping a list of unique items based on an array of objects within the return statement of a component.
+* Deploying the site to github pages.
 
-### `npm run build`
+## Future Opportunities
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Revisiting this project in the future there are a couple of features I would like add, including: 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Developing a simple backend with data models for a user and their cart that stores items on their wishlist and purchase/refund history.
+* Creating a state variable and function that allows the user to click back to the clothing category they were seeing from a product page
+  as opposed to the first default category.
+* Utilizing an email as the username, have a mock newsletter be sent to the email after signing up for it in the footer information bar.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Acknowledgements 
 
-### `npm run eject`
+Resources that were helpful in creating this application.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* <a href="https://www.npmjs.com/package/uniqid" target="blank">Uniqid</a>
+* <a href="https://www.npmjs.com/package/react-image-gallery" target="blank">React Image Gallery</a>
+* <a href="https://www.npmjs.com/package/react-player" target="blank">React Player</a>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## About Me 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Visit my <a href="https://github.com/mulcharv" target="blank">about me</a> page to learn what I'm up to and contact me.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
