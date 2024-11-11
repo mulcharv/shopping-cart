@@ -231,18 +231,18 @@ function Home() {
         </div>
         <div className='animationmediacont'>
           <div className='animationvidcont'>
-            <Expire delay='30000'>
-              <div className='player-wrapper'>
-                <ReactPlayer
-                  className='kawhivid'
-                  url={'https://streamable.com/koso14'}
-                  width='90%'
-                  height='90%'
-                  playing={true}
-                  muted={true}
-                />
-              </div>
-            </Expire>
+            {/* <Expire delay='30000'> */}
+            <div className='player-wrapper'>
+              <ReactPlayer
+                className='kawhivid'
+                url={'https://streamable.com/koso14'}
+                width='90%'
+                height='90%'
+                playing={true}
+                muted={true}
+              />
+            </div>
+            {/* </Expire> */}
           </div>
           <div className='animationimgcont'>
             {!loadingImages && (
